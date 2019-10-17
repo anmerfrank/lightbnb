@@ -9,16 +9,24 @@ VALUES
 INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, parking_spaces, number_of_bathrooms, number_of_bedrooms, country, street, city, province, post_code) 
 VALUES 
 (1, 'Hundred Acre Wood', 'description', 'https://pix10.agoda.net/hotelImages/175187/-1/8b9b790be8166b9fbe4a2b4fdefcf3a1.jpg', 'https://pix10.agoda.net/hotelImages/175187/-1/8b9b790be8166b9fbe4a2b4fdefcf3a1.jpg', 110, 0, 1, 2, 'Canada', 'First St', 'Vancouver', 'BC', 'v3s4d5'),
-(2, 'Dockside House', 'description', 'https://new-hls.s3.amazonaws.com/hls/data/280/website/general/bn/normal_full_view-3_1458269075-539364792.jpg', 'https://new-hls.s3.amazonaws.com/hls/data/280/website/general/bn/normal_full_view-3_1458269075-539364792.jpg', 145, 2, 1, 4, 'Canada', 'Cedar St', 'BC', 'v5d5g1'),
-(3, 'Bali Resort', 'description', 'https://media-cdn.tripadvisor.com/media/photo-s/0d/35/23/80/anilao-awari-bay-diving.jpg', 'https://media-cdn.tripadvisor.com/media/photo-s/0d/35/23/80/anilao-awari-bay-diving.jpg', 180, 3, 2, 8, 'Canada', 'Renfrew St', 'Vancouver', 'BC', v8n1n5);
+(2,  'Dockside House', 'description', 'https://new-hls.s3.amazonaws.com/hls/data/280/website/general/bn/normal_full_view-3_1458269075-539364792.jpg', 'https://new-hls.s3.amazonaws.com/hls/data/280/website/general/bn/normal_full_view-3_1458269075-539364792.jpg', 145, 2, 1, 4, 'Canada', 'Cedar St', 'Oliver', 'BC', 'v5d5g1'),
+(3, 'Bali Resort', 'description', 'https://media-cdn.tripadvisor.com/media/photo-s/0d/35/23/80/anilao-awari-bay-diving.jpg', 'https://media-cdn.tripadvisor.com/media/photo-s/0d/35/23/80/anilao-awari-bay-diving.jpg', 180, 3, 2, 8, 'Canada', 'Renfrew St', 'Vancouver', 'BC', 'v8n1n5');
 
-INSERT INTO reservations (start_date, end_date, property_id, guest_id)
+INSERT INTO reservations (id, guest_id, property_id, start_date, end_date)
 VALUES 
-('2018-09-11', '2018-09-26', 1, 3),
-('2018-11-12', '2018-11-24', 2, 4),
-('2017-06-03', '2017-06-21', 4, 5),
-('2018-05-02', '2018-05-24', 3, 1);
-('2014-05-07', '2015-05-29', 5, 2);
+(1, 2, 3, '2017-03-08', '2017-03-10');
+INSERT INTO reservations (id, guest_id, property_id, start_date, end_date)
+VALUES 
+(2, 3, 2, '2016-03-11', '2016-04-08');
+INSERT INTO reservations (id, guest_id, property_id, start_date, end_date)
+VALUES 
+(3, 1, 3, '2018-03-05', '2018-03-10');
+INSERT INTO reservations (id, guest_id, property_id, start_date, end_date)
+VALUES 
+(4, 4, 3, '2022-12-14', '2023-01-09');
+INSERT INTO reservations (id, guest_id, property_id, start_date, end_date)
+VALUES 
+(5, 5, 1, '2021-10-27', '2021-11-06');
 
 INSERT INTO property_reviews (guest_id, rating, message)
 VALUES 
